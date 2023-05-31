@@ -22,13 +22,8 @@ provider "alicloud" {
   region     = "ap-southeast-3"
 }
 
-resource "alicloud_security_group" "sg" {
-  name = "Aaron-test-sg"
-  vpc_id = "vpc-8psy6tb0mmlppwxui7e0x"
-}
-
 resource "alicloud_instance" "Test" {
-  security_groups = alicloud_security_group.sg.*.id
+  security_groups = [ "sg-8ps2di45ns5shx56ro6a" ]
   instance_type = "ecs.t5-lc2m1.nano"
   system_disk_category = "cloud_efficiency"
   system_disk_name = "Aaron-test-disk"
