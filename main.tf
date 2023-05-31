@@ -30,5 +30,5 @@ resource "alicloud_instance" "Test" {
   image_id = "aliyun_3_x64_20G_alibase_20230424.vhd"
   instance_name = "Aaron-test"
   vswitch_id = "vsw-8psle91nr385rpxgyqi8p"
-  system_disk_size = 20
+  system_disk_size = 40
 }
