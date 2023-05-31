@@ -3,7 +3,7 @@ terraform {
     organization = "virtuosity"
 
     workspaces {
-      name = "import-ecs2"
+      name = "test"
     }
   }
 
